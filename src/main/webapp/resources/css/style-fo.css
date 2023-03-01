@@ -99,7 +99,7 @@ label.error {
 	display: inline-block;
 	text-align: center;
 	line-height: 1;
-	font-family: 'roboto-thin';
+	font-family: roboto-thin;
 }
 
 .page-dashboard h1:before, .page-dashboard h1:after {
@@ -197,7 +197,6 @@ label.error {
 	color: #fff;
 	text-decoration: none;
 	font-size: 18px;
-	color: #fff;
 	-webkit-transform: translateY(50px);
 	-moz-transform: translateY(50px);
 	-o-transform: translateY(50px);
@@ -232,7 +231,6 @@ label.error {
 	color: #fff;
 	text-decoration: none;
 	font-size: 18px;
-	color: #fff;
 	-webkit-transform: translateY(50px);
 	-moz-transform: translateY(50px);
 	-o-transform: translateY(50px);
@@ -272,7 +270,7 @@ label.error {
 	margin-top: 8px;
 	font-size: 13px;
 	color: #666666;
-	font-family: 'robotoregular';
+	font-family: robotoregular;
 	text-align: justify;
 }
 
