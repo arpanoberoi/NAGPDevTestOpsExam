@@ -9,6 +9,6 @@
 			coe.devops@nagarro.com</a>
 	</div>
 	<strong>Copyright &copy; <a
-		href="http://www.nagarro.com/us/en" target="_blank">Nagarro</a>.
+		href="http://www.nagarro.com/us/en" target="_blank" rel="noopener">Nagarro</a>.
 	</strong> All rights reserved.
 </footer>
