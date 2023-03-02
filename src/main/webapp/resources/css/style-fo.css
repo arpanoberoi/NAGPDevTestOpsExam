@@ -99,7 +99,7 @@ label.error {
 	display: inline-block;
 	text-align: center;
 	line-height: 1;
-	font-family: Helvetica;
+	font-family: sans-serif;
 }
 
 .page-dashboard h1:before, .page-dashboard h1:after {
