@@ -1,9 +1,5 @@
-package Demo;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -15,11 +11,9 @@ public class TestCases {
 
 	@BeforeMethod
 	public void setup() {
-		String hostname = System.getProperty("hostname");
-		String port = System.getProperty("port");
-		String context = System.getProperty("context");
-		driver = new HtmlUnitDriver();
-		driver.get("http://" + hostname + ":" + port + "/" + context);
+						System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Drivers/chromedriver.exe");
+						driver = new ChromeDriver();
+						driver.get("https://www.google.com/");
 	}
 
 	// Test to pass as to verify listeners .
@@ -27,14 +21,16 @@ public class TestCases {
 	public void VerifyTitle() {
 
 		String welcometext = driver.getTitle();
-		Assert.assertEquals(welcometext, "DevOps Tool", "Text not found");
+		Assert.assertEquals(welcometext, "Google", "Text not found");
 	}
 
 	@Test
 	public void VerifyHomePage() {
 
-		String welcometext = driver.findElement(By.xpath("//*[@class = 'container']/h1")).getText();
-		Assert.assertEquals(welcometext, "DevOps Sample Application", "Text not found");
+		//WebElement welcometext = driver.findElement(By.xpath("/html/body//img[@alt='Google']"));
+		//Assert.assertTrue(welcometext, "Google not found");
+		String welcometext = driver.getTitle();
+		Assert.assertEquals(welcometext, "Google", "Text not found");
 	}
 	// Forcefully failed this test as to verify listener.
 	@AfterMethod
